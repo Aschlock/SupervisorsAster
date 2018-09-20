@@ -1,17 +1,4 @@
 //
-$(window).ajaxComplete( function(){ 
-	for ( let i = 0; i < document.getElementsByClassName("row").length; i++ ) {
-		if ( ( document.getElementsByClassName("row")[i].cells[2].innerText === "[+2]" || document.getElementsByClassName("row")[i].cells[2].innerText === "[+1]" || document.getElementsByClassName("row")[i].cells[2].innerText === "[–1]" || document.getElementsByClassName("row")[i].cells[2].innerText === "[–2]" ) && document.getElementsByClassName("row")[i].cells[1].innerText == "ожидание" ) {
-			document.getElementsByClassName("row")[i].cells[1].setAttribute("style", "opacity: 0.3");
-		}
-		else  {
-			if (document.getElementsByClassName("row")[i].cells[1].getAttribute("style") == "opacity: 0.3" ) {
-				document.getElementsByClassName("row")[i].cells[1].removeAttribute("style") }
-		}
-	}
-})
-	
-
 $(window).ajaxComplete( function() {
 	for ( let i = 0; i < document.getElementsByClassName("row").length; i++ ) {
 		if ( document.getElementsByClassName("row")[i].cells[1].innerText.indexOf("Сложный инцидент") !== -1  && document.getElementsByClassName("row")[i].cells[1].innerText >= "Сложный инцидент (00:10:00)" ) {
@@ -21,6 +8,22 @@ $(window).ajaxComplete( function() {
 				document.getElementsByClassName("row")[i].removeAttribute("style")
 			}
         }
+
+		if ( ( document.getElementsByClassName("row")[i].cells[2].innerText !== "[+2]" && document.getElementsByClassName("row")[i].cells[2].innerText !== "[+1]" ) && document.getElementsByClassName("row")[i].cells[1].innerText.indexOf("Почта") !== -1 ) {
+			document.getElementsByClassName("row")[i].cells[1].setAttribute("style", "background: url(https://image.ibb.co/gwKFh9/2135799_64.png) 121px 5px no-repeat; background-size: 14px;") 
+		} else {
+			if (document.getElementsByClassName("row")[i].cells[1].getAttribute("style") == "background: url(https://image.ibb.co/gwKFh9/2135799_64.png) 121px 5px no-repeat; background-size: 14px;" ) {
+				document.getElementsByClassName("row")[i].cells[1].removeAttribute("style")
+			}
+        }
+
+		if ( ( document.getElementsByClassName("row")[i].cells[2].innerText === "[+2]" || document.getElementsByClassName("row")[i].cells[2].innerText === "[+1]" || document.getElementsByClassName("row")[i].cells[2].innerText === "[–1]" || document.getElementsByClassName("row")[i].cells[2].innerText === "[–2]" ) && document.getElementsByClassName("row")[i].cells[1].innerText == "ожидание" ) {
+			document.getElementsByClassName("row")[i].cells[1].setAttribute("style", "opacity: 0.3");
+		}
+		else  {
+			if (document.getElementsByClassName("row")[i].cells[1].getAttribute("style") == "opacity: 0.3" ) {
+				document.getElementsByClassName("row")[i].cells[1].removeAttribute("style") }
+		}
 	}
 })
 
@@ -51,19 +54,6 @@ $(window).ajaxComplete( function() {
 		}
 	} else { 
 	notificationCounter = 0 
-	}
-})
-
-
-$(window).ajaxComplete( function() { 
-	for ( var i = 0; i < document.getElementsByClassName("row").length; i++ ) {
-		if ( ( document.getElementsByClassName("row")[i].cells[2].innerText !== "[+2]" && document.getElementsByClassName("row")[i].cells[2].innerText !== "[+1]" ) && document.getElementsByClassName("row")[i].cells[1].innerText.indexOf("Почта") !== -1 ) {
-			document.getElementsByClassName("row")[i].cells[1].setAttribute("style", "background: url(https://image.ibb.co/gwKFh9/2135799_64.png) 121px 5px no-repeat; background-size: 14px;") 
-		} else {
-			if (document.getElementsByClassName("row")[i].cells[1].getAttribute("style") == "background: url(https://image.ibb.co/gwKFh9/2135799_64.png) 121px 5px no-repeat; background-size: 14px;" ) {
-				document.getElementsByClassName("row")[i].cells[1].removeAttribute("style")
-			}
-        }
 	}
 })
 
