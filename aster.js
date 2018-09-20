@@ -27,7 +27,7 @@ $(window).ajaxComplete( function() {
 	}
 })
 
-//place toolbar under chosen agent
+//place toolbar under chosen agent 
 var ultoolbar = $(".toolbar");
 $(window).ajaxComplete( function() {
 	var elements = $("#agents_queues .tab:first-of-type .row") || [];
