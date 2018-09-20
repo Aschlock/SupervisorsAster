@@ -27,7 +27,7 @@ $(window).ajaxComplete( function() {
 	}
 })
 
-
+//place toolbar under chosen agent
 var ultoolbar = $(".toolbar");
 $(window).ajaxComplete( function() {
 	var elements = $("#agents_queues .tab:first-of-type .row") || [];
@@ -44,6 +44,7 @@ $(window).ajaxComplete( function() {
 	})
 })
 
+//notifications
 window.onload = Notification.requestPermission();
 var notificationCounter = 0;
 $(window).ajaxComplete( function() {
@@ -57,7 +58,7 @@ $(window).ajaxComplete( function() {
 	}
 })
 
-
+//hide header and make arrow to show it
 $(document).ready( function createArrow() {
 	$("#header").append("<img width='20px' title='Телефон супервизора' class='arrow' src='https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-down-01-512.png'>");
 	$( ".arrow" ).click(function() {
