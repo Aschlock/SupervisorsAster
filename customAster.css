@@ -1,0 +1,345 @@
+* { transition: .2s}
+
+.fw2-tabs .tab {
+    border: none;
+    border-width: 0 1px 1px;
+    padding: 0;
+}
+
+.fw2-tabs ul.labels {
+    height: 51px;
+    line-height: 25px;
+    list-style: none;
+    background: none;
+    border-bottom: 2px solid #00000014;
+    margin: 0 0 10px 0;
+}
+
+#wrapper {
+    margin: 0 auto;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    background: whitesmoke;
+}
+
+.fw2-tabs {
+    margin: 10px;
+    background: white;
+    padding: 0 20px 20px 20px;
+    box-shadow: 0 5px 10px 0px #00000021;
+}
+
+.fw2-tabs ul.labels > li.current {
+     color: none;
+    background: none;
+    padding: 14px;
+    border: none;
+    border-radius: 0;
+  box-shadow: inset 0 -2px 0 0px #1FB09F;
+}
+
+.fw2-tabs ul.labels > li {
+    font-weight: none;
+    float: left;
+    display: inline;
+     margin: none;
+    padding: 14px;
+    color: #666;
+    cursor: pointer;
+     background: none;
+     border: none;
+    border-bottom: none;
+    position: relative;
+    border-radius: none;
+}
+
+.fw2-tabs ul.labels > li:not(.current):hover {
+    color: none;
+    background: none;
+    border: none;
+    border-bottom: none;
+    box-shadow: inset 0 -2px 0 #1fb09f5c;
+    transition: .2s;
+}
+
+.vertical tbody tr th {
+    /* background: #7b7b7b; */
+    width: 180px;
+    text-align: left!important;
+    padding: 0 10px;
+}
+
+*::selection {
+    background: #4a4a4a;
+    color: white;
+}
+
+a.icon_pause {
+    background: url(https://aster-mp5.kontur/cc-line24/img/agent_icons/25_Pause-512.png) 0px 70% no-repeat;
+    padding: 1px 0 1px 22px;
+    line-height: 18px;
+    background-size: 17px;
+}
+
+a.icon_ag_logout {
+    background: url(https://aster-mp5.kontur/cc-line24/img/agent_icons/icons_exit2-512.png) 0px 70% no-repeat;
+    padding: 1px 0 1px 22px;
+    line-height: 18px;
+    background-size: 18px;
+}
+
+a.icon_unpause {
+    background: url(https://cdn1.iconfinder.com/data/icons/freeline/32/Settings_gear_setting_tools-512.png) 0 70% no-repeat;
+    padding: 1px 0 1px 24px;
+    line-height: 18px;
+    background-size: 19px;
+}
+
+ul.toolbar li.link-item a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul.toolbar li {
+    padding: 0px 15px 0 0px;
+    margin: -3px 0;
+}
+
+ul.toolbar {
+    padding: 9px 0px;
+    margin-bottom: 2px;
+}
+
+tr {
+    border-bottom: 1px solid #ebebeb;
+}
+
+.Grid table td {
+    border: none;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+        padding: 0 4px;
+    height: 26px;
+    text-align: left;
+}
+
+.Grid table tr:hover {
+    background: #e4e4e4;
+    box-shadow: inset 4px 0 0 #1fb09f;
+}
+
+tr:nth-of-type(2n) {
+    background: #fbfbfb;
+}
+
+.Grid table td:first-of-type {
+    padding: 0 15px;
+}
+
+/*.Grid table tr.row.selected {
+    background: #e8e8e8;
+}*/
+
+#calls .current {
+    box-shadow: inset 0 -2px 0 0px #50a4e0;
+}
+#calls th {
+    background: #50a4e0;
+}
+
+#cc .fw2-tabs .current {
+    box-shadow: inset 0 -2px 0 #50a4e0;
+}
+#cc .fw2-tabs tr th {
+    background: #50a4e0;
+}
+
+.Grid table th {
+    border: 1px #EEE solid;
+    padding: 0 4px;
+    font-size: 90%;
+    height: 26px;
+    color: #FFF;
+    background-color: #1fb09f;
+    cursor: pointer;
+}
+
+#calls .Grid table tr:hover {
+    background: #e4e4e4;
+    box-shadow: inset 4px 0 0 #50a4e0;
+}
+
+
+.ui-dropdownchecklist-selector {
+    height: 18px;
+    border: 1px solid #c6c6c6;
+    background: #fff;
+    font-size: inherit;
+    line-height: 18px;
+    background: url(https://cdn3.iconfinder.com/data/icons/eightyshades/512/11_Search-512.png) #fff no-repeat 96% 49%;
+    padding: 1px 28px 1px 1px;
+    vertical-align: middle;
+    background-size: 13px;
+}
+
+a.icon_inc {
+    background: url(https://cdn1.iconfinder.com/data/icons/feather-2/24/cast-512.png) 4px 70% no-repeat;
+    padding: 1px 0 1px 22px;
+    line-height: 18px;
+    background-size: 18px;
+}
+
+.red {
+    background-color: #cc333340;
+    color: #b71c1cfc;
+    font-weight: normal;
+    box-shadow: inset 3px 0px 0 #ea2121;
+}
+
+.yellow {
+    background-color: #ffff3340;
+    font-weight: normal;
+    padding: 3px;
+    box-shadow: inset 3px 0 0 #eac821;
+    color: #927c10;
+}
+
+.green {
+    background-color: #00993340;
+    color: #2d6b1c;
+    font-weight: normal;
+    box-shadow: inset 3px 0 0 #58cc3b;
+}
+
+table.monitor > tbody > tr > td > div {
+    margin-bottom: 20px;
+}
+
+.header {
+    right: 0;
+    top: 0;
+	margin-top: -55px;
+    background-color: #F0F0F0;
+    opacity: 0.95;
+    padding: 10px 28px 10px 10px;
+    border: none;
+    border-top: none;
+    box-shadow: 0 2px 10px 0px #00000021;
+    z-index: 1;
+}
+
+.filters input[type="text"], .filters input.hint {
+    border: 1px solid #c6c6c6;
+    height: 18px;
+    vertical-align: middle;
+    padding: 2px 5px;
+}
+
+tbody {
+    border: 1px solid #ebebeb;
+}
+
+
+#agents_queues .fw2-tabs .tab:first-of-type tr.row.selected + .toolbar {
+    display: block;
+    margin: -32px 0 0 13px;
+    position: absolute;
+}
+
+.Grid table tr.row.selected {
+    background: none;
+    box-shadow: inset 4px 0px 0px #1fb09f;
+}
+
+#calls .Grid table tr.row.selected {
+    background: none;
+    box-shadow: inset 4px 0px 0px #50a4e0;
+}
+
+#agents_queues .tab:first-of-type tr.row.selected > td {
+    padding-bottom: 45px;
+    padding-top: 6px;
+}
+
+.toolbar {
+	display: none;
+}
+
+.busy, .direct, a:link, a:visited, .dialout {
+    color: #1fb09f;
+}
+
+.calling {
+	color: #999;
+}
+
+div#report_container tr {
+    background: none;
+}
+
+a.icon_dial {
+    background: url(../img/agent_icons/Call01-512.png) 2px 70% no-repeat;
+    padding: 1px 0 1px 24px;
+    line-height: 18px;
+    background-size: 18px;
+}
+
+a.icon_take {
+    background: url(https://cdn3.iconfinder.com/data/icons/simple-files-1/128/Update-512.png) 2px 70% no-repeat;
+    padding: 1px 0 1px 24px;
+    line-height: 18px;
+    background-size: 18px;
+}
+
+a.icon_whisper {
+    background: url(https://cdn3.iconfinder.com/data/icons/simple-files-1/128/Message-2-512.png) 2px 70% no-repeat;
+    padding: 1px 0 1px 24px;
+    line-height: 18px;
+    background-size: 17px;
+}
+
+a.icon_spy {
+    background: url(https://image.ibb.co/cTH7Ep/22_512.png) 2px 70% no-repeat;
+    padding: 1px 0 1px 24px;
+    line-height: 18px;
+    background-size: 17px;
+}
+
+.toolbar li a:not(.disabled) {
+    filter: invert(.2);
+}
+
+.toolbar li a.disabled {
+    filter: opacity(.4);
+}
+
+
+.slide + .arrow {
+    transform: rotate(180deg);
+    opacity: 1;
+}
+
+.arrow {
+    width: 20px;
+    right: 4px;
+    top: 10px;
+    z-index: 3;
+    position: absolute;
+    opacity: .2;
+	-webkit-user-drag: none;
+}
+
+.arrow:not(.arrow + .slide):hover { 
+	opacity: .5
+}
+
+.slide {
+	margin-top: 0;
+}
+
+@media (max-width > 2250px) {
+	
+}
+
