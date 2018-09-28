@@ -326,7 +326,7 @@ a.icon_spy {
     right: 4px;
     top: 10px;
     z-index: 3;
-    position: absolute;
+    position: fixed;
     opacity: .2;
 	-webkit-user-drag: none;
 }
